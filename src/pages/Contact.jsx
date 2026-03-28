@@ -28,7 +28,7 @@ const Contact = () => {
 
   const contactformHandler = async (e) => {
     e.preventDefault();
-    setIsloading(true);
+    setIsloading(false);
 
     try {
       const response = await fetch(`${BASE_URL}/api/contact-form/save-message`, {
@@ -89,7 +89,7 @@ const Contact = () => {
             <motion.div
               initial={{ y: 30, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.1, ease: 'easeInOut' }}
+              transition={{ duration: 0.5, delay: 0.1, ease: 'easeInOut' }}
               viewport={{ once: false, amount: 0.2 }}
               className='p-4 py-3 bg-gray-800 flex-grow border border-gray-700 rounded-md hover:border-background-secondary hover:shadow-[0_8px_24px_rgba(32,178,166,0.2)] transition-transform duration-300'
             >
@@ -110,7 +110,7 @@ const Contact = () => {
             <motion.div
               initial={{ y: 30, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
               viewport={{ once: false, amount: 0.2 }}
               className='p-4 py-3 bg-gray-800 flex-grow border border-gray-700 rounded-md hover:border-background-secondary hover:shadow-[0_8px_24px_rgba(32,178,166,0.2)] transition-transform duration-300'
             >
@@ -129,7 +129,7 @@ const Contact = () => {
             <motion.div
               initial={{ y: 30, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.3, ease: 'easeInOut' }}
+              transition={{ duration: 0.5, delay: 0.3, ease: 'easeInOut' }}
               viewport={{ once: false, amount: 0.2 }}
               className='p-4 py-3 bg-gray-800 flex-grow border border-gray-700 rounded-md hover:border-background-secondary hover:shadow-[0_8px_24px_rgba(32,178,166,0.2)] transition-transform duration-300'
             >
@@ -152,7 +152,7 @@ const Contact = () => {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 1, delay: 0.2, ease: 'easeInOut' }}
+            transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
             className="p-2 py-6 sm:p-0 sm:pt-6 md:p-6  ">
             <form
               onSubmit={(e) => contactformHandler(e)}

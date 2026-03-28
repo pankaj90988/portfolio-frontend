@@ -64,7 +64,7 @@ const Home = () => {
           initial={{ y: -40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.2 }}
-          transition={{ duration: 1.5, delay: 0.2, }}
+          transition={{ duration: 0.5, delay: 0.2,ease:'easeOut', }}
           whileHover={{ scale: 1.05 }}
           className="relative h-[16rem] w-[16rem] sm:h-[20rem] sm:w-[20rem] bg-background-secondary border-8 rounded-full cursor-pointer shadow-portrait"
         >
@@ -84,7 +84,7 @@ const Home = () => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.15 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2,ease:'easeOut', }}
             className='text-[18px] pt-3 font-semibold'
           >
             Hello, It's me
@@ -93,7 +93,7 @@ const Home = () => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.15 }}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.4,ease:'easeOut', }}
             className='text-[3rem] font-semibold'
           >
             Pankaj
@@ -103,7 +103,7 @@ const Home = () => {
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: false, amount: 0.15 }}
-              transition={{ duration: 1, delay: 0.6 }}
+              transition={{ duration: 0.5, delay: 0.6,ease:'easeOut', }}
               className='text-2xl sm:text-3xl py-1'
             >
               I'm a <span className='text-background-secondary font-medium'>{dynamictext}</span><span className='text-background-secondary font-semibold animate-pulse'>|</span>
@@ -116,7 +116,7 @@ const Home = () => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.15 }}
-            transition={{ duration: 1, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.8,ease:'easeOut', }}
             className='text-[16px] sm:text-[18px] sm:text-left p-1 tracking-wide'
           >
             A passionate Full-Stack Developer specializing in Python, FastAPI, and React. I build secure, high-performance web applications and seamless database architectures.
@@ -129,7 +129,7 @@ const Home = () => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 1.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.2,ease:'easeOut', }}
             href='mailto:pankajjnv2005@gmail.com'
             className='p-2 px-4 bg-background-secondary border border-transparent hover:border-white rounded-full'
           >
@@ -141,7 +141,7 @@ const Home = () => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 1.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.4,ease:'easeOut', }}
             className='p-2 px-4 bg-background-secondary border border-transparent hover:border-white rounded-full'
           >
             DOWNLOAD CV

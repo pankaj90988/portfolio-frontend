@@ -30,7 +30,7 @@ const EducationTimeline = () => {
             <motion.div 
             initial={{x:250,opacity:0}}
             whileInView={{x:0,opacity:1}}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.3,ease:'easeOut' }}
             viewport={{ once: false, amount: 0.15 }}
             className="p-4 md:p-4  bg-gray-800 rounded-3xl border border-slate-700 shadow-xl">
                 <h3 className="text-2xl font-semibold text-white mb-6 pl-2">

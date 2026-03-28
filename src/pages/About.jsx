@@ -21,7 +21,7 @@ const About = () => {
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false, amount: 0.2 }}
-                transition={{ duration: 1.5, delay: 0.1, }}
+                transition={{ duration: 0.5, delay: 0.1, ease:'easeOut' }}
                 className='p-0 py-2 text-xl sm:p-2 sm:text-3xl font-semibold'>About
                 <span className='text-background-secondary'> Me</span>
               </motion.h1>
@@ -30,7 +30,7 @@ const About = () => {
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false, amount: 0.2 }}
-                transition={{ duration: 1.5, delay: 0.2, }}
+                transition={{ duration:0.5, delay: 0.2,ease:'easeOut',  }}
                 className='p-0 text-2xl sm:p-2 sm:text-4xl font-semibold'>Full-Stack <span className='text-background-secondary'>Python Developer</span>
               </motion.h1>
 
@@ -41,7 +41,7 @@ const About = () => {
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false, amount: 0.2 }}
-                transition={{ duration: 1.5, delay: 0.3, }}
+                transition={{ duration: 0.5, delay: 0.3,ease:'easeOut', }}
                 className='inline-block text-[16px] sm:text-[18px] mb-4'>
                 Hii, I am Pankaj, currently pursuing my B.Tech in Electronics and Communication Engineering from the National Institute of Technology (NIT) Patna. My deep interest in software development has driven me to become a Full-Stack Python Developer specializing in the FARM stack (FastAPI, React, MongoDB).
               </motion.p>
@@ -49,7 +49,7 @@ const About = () => {
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false, amount: 0.2 }}
-                transition={{ duration: 1.5, delay: 0.4, }}
+                transition={{ duration: 0.5, delay: 0.4,ease:'easeOut', }}
                 className='inline-block text-[16px] sm:text-[18px] mb-4'>
                 I am proficient in building high-performance, asynchronous backends using FastAPI and Pydantic models, seamlessly connected to dynamic and responsive frontends built with React.
               </motion.p>
@@ -57,7 +57,7 @@ const About = () => {
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false, amount: 0.2 }}
-                transition={{ duration: 1.5, delay: 0.5, }}
+                transition={{ duration: 0.5, delay: 0.5,ease:'easeOut', }}
                 className='inline-block text-[16px] sm:text-[18px] mb-4'
               >
                 Furthermore, I am skilled in integrating secure authentication flows (JWT), OTP-based email verification via SendGrid, seamless media storage using Cloudinary and designing scalable NoSQL database architectures. I am passionate about writing clean code, following modern web standards, and solving problems using DSA in C++.
@@ -74,7 +74,7 @@ const About = () => {
               initial={{ y: -40, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: false, amount: 0.2 }}
-              transition={{ duration: 1.5, delay: 0.2, }}
+              transition={{ duration: 0.5, delay: 0.2,ease:'easeOut', }}
               className='border-8 rounded-full shadow-portrait'
             >
               <img

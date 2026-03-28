@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const WelcomePage = () => {
-  const text = "<P/>"
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white font-sans overflow-hidden">
       <div>
