@@ -18,7 +18,7 @@ const Footer = () => {
         <div className='w-full flex flex-col items-center justify-center gap-4 pt-2'>
 
           <div className="text-white flex flex-row justify-center gap-4 text-center sm:gap-6">
-            <a href="https://www.linkedin.com/in/pankaj-kumar-826153261" title='Linkedin' target='_blank'><img className='w-11 h-11 rounded-full border border-gray-700' src={linkedin} alt="Linkedin" /></a>
+            <a href="https://www.linkedin.com/in/pankaj-826153261" title='Linkedin' target='_blank'><img className='w-11 h-11 rounded-full border border-gray-700' src={linkedin} alt="Linkedin" /></a>
               <h1 className='p-0 font-semibold text-[18px] text-background-secondary text-center underline'>
               {
                 (location.pathname === '/admin-login-form' || location.pathname === '/admin-dashboard') ?
