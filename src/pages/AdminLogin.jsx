@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'motion/react'
 import { useNavigate } from 'react-router';
-import { useData } from '../context/ContextAPI';
 import Spin from '../components/Spin';
 import { toast } from 'react-toastify';
 import { BsEyeSlash } from "react-icons/bs";
@@ -12,7 +11,7 @@ const AdminLogin = () => {
 
   const navigate = useNavigate();
   const [isopenEye, setisopenEye] = useState(false)
-  const { isAPICalling, setisAPICalling} = useData();
+  const [isLoginAPICalling,setIsLoginAPICalling]=useState(false);
   const [credential, setCredential] = useState({
     email: "",
     password: ""
@@ -29,7 +28,7 @@ const AdminLogin = () => {
 
   const adminLoginSubmitHandler = async (e) => {
     e.preventDefault();
-    setisAPICalling(true);
+    setIsLoginAPICalling(true);
     try {
       const response = await fetch(`${BASE_URL}/api/admin/auth/admin-login`, {
         method: 'POST',
@@ -56,7 +55,7 @@ const AdminLogin = () => {
         email: "",
         password: ""
       })
-      setisAPICalling(false);
+      setIsLoginAPICalling(false);
     }
   }
 
@@ -129,7 +128,7 @@ const AdminLogin = () => {
               className='py-2 px-16 rounded-full bg-background-secondary'
               type='submit'
             >
-              {isAPICalling ? <Spin /> : <p>Login</p>}
+              {isLoginAPICalling ? <Spin /> : <p>Login</p>}
             </motion.button>
           </form>
 

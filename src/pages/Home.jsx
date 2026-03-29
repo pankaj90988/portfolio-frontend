@@ -136,7 +136,7 @@ const Home = () => {
             CONTACT ME
           </motion.a>
           <motion.a
-            href='https://drive.google.com/file/d/16K-aoBs-gLSBxtwiLT7af-OoBQ0srClX/view?usp=sharing'
+            href='https://drive.google.com/file/d/1Ea2oQlPIE6Go9iW-bFp0TS4mDTrG_PPc/view?usp=sharing'
             target='_blank'
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
