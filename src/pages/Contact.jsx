@@ -28,7 +28,7 @@ const Contact = () => {
 
   const contactformHandler = async (e) => {
     e.preventDefault();
-    setIsloading(false);
+    setIsloading(true);
 
     try {
       const response = await fetch(`${BASE_URL}/api/contact-form/save-message`, {
